@@ -10,5 +10,8 @@
     "d"
   ],
   "author": "Viktor Dzundza <victor.dzundza.dev@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "restify": "^6.3.4"
+  }
 }
