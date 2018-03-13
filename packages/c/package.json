@@ -1,0 +1,14 @@
+{
+  "name": "c",
+  "version": "0.0.0",
+  "description": "c package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 0"
+  },
+  "keywords": [
+    "c"
+  ],
+  "author": "Viktor Dzundza <victor.dzundza.dev@gmail.com>",
+  "license": "ISC"
+}

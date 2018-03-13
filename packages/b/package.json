@@ -1,0 +1,14 @@
+{
+  "name": "b",
+  "version": "0.0.0",
+  "description": "B package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 0"
+  },
+  "keywords": [
+    "b"
+  ],
+  "author": "Viktor Dzundza <victor.dzundza.dev@gmail.com>",
+  "license": "ISC"
+}
