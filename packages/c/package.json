@@ -4,7 +4,8 @@
   "description": "c package",
   "main": "index.js",
   "scripts": {
-    "test": "echo 0"
+    "test": "echo 0",
+    "start": "node index.js"
   },
   "keywords": [
     "c"
@@ -12,6 +13,7 @@
   "author": "Viktor Dzundza <victor.dzundza.dev@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "restify": "^6.3.4"
+    "restify": "^6.3.4",
+    "restify-clients": "^2.0.0"
   }
 }
