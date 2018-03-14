@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: c
+  namespace: development
+spec:
+  selector:
+    app: c
+  ports:
+  - protocol: TCP
+    name: http
+    port: 8080
+    targetPort: 8080

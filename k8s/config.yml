@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: development
+  namespace: development
+data:
+  b.uri: b.development:8080
+  c.uri: c.development:8080
+  d.uri: d.development:8080

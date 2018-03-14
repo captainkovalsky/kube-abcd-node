@@ -1,0 +1,26 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: a
+  namespace: development
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: a
+    spec:
+      containers:
+      - name: a
+        image: abcd:latest
+        args: [a]
+        ports:
+          - containerPort: 8080
+            name: rest
+            protocol: TCP
+        env:
+          - name: b_uri
+            valueFrom: 
+              configMapKeyRef:
+                name: all-config
+                key: b.uri
