@@ -1,0 +1,20 @@
+machine:
+    node:
+        version: 7.10.1
+
+test:
+    override:
+        - npm run lint
+        - mkdir -p $CIRCLE_TEST_REPORTS/mocha
+        - mkdir -p ./reports
+        - npm run test:one:ci
+        - npm run test:two:ci
+        - npm run reports:merge
+
+experimental:
+    notify:
+        branches:
+            only:
+                - master
+                - develop
+                - framework
